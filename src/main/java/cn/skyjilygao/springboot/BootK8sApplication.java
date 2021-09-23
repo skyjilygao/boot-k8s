@@ -30,12 +30,12 @@ public class BootK8sApplication {
         String ip=addr.getHostAddress();
         //获取本机计算机名称
         String hostName=addr.getHostName();
-        log.info("本机IP："+ip+"\n本机名称:"+hostName);
+        log.info("本机IP："+ip+"\t本机名称:"+hostName);
         return String.format("hello %s" +
-                        "\nserver port: %s" +
-                        "\n本机IP：%s" +
-                        "\n本机名称：%s" +
-                        "\n时间：%s",
+                        "\tserver port: %s" +
+                        "\t本机IP：%s" +
+                        "\t本机名称：%s" +
+                        "\t时间：%s",
                 name, port, ip, hostName, ZonedDateTime.now());
     }
 }
